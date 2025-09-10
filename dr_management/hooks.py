@@ -141,7 +141,7 @@ doctype_js = {
 
 doc_events = {
 	"Journal Entry": {
-		"autoname": "dr_tools.config.journal_entry.autoname",
+		"autoname": "dr_management.config.journal_entry.autoname",
 	}
 }
 
