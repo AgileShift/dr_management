@@ -1,5 +1,5 @@
 app_name = "dr_management"
-app_title = "DR Magement"
+app_title = "DR Management"
 app_publisher = "Jeans K. Real"
 app_description = "DR Management Tools"
 app_email = "contacto@gruporeal.org"
