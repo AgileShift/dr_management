@@ -10,7 +10,10 @@ def autoname(doc, method):
 	if not doc.posting_date:
 		frappe.throw("El campo de 'Fecha' es requerido para generar el Consecutivo del Comprobante.")
 
-	posting_date = datetime.strptime(doc.posting_date, "%Y-%m-%d")  # Convert to datetime object
+	if type(doc.posting_date) == str:
+		posting_date = datetime.strptime(doc.posting_date, "%Y-%m-%d")  # Convert to datetime object
+	else:
+		posting_date = doc.posting_date
 	year = posting_date.strftime("%Y")
 	month = months[posting_date.month - 1]
 
